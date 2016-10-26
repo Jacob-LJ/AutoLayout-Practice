@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CJq-B6-nCe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="18Z-ea-uEd">
+            <objects>
+                <viewController id="CJq-B6-nCe" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RSx-B5-6xo"/>
+                        <viewControllerLayoutGuide type="bottom" id="eLQ-yH-wlv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sPM-oO-XQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A16-u5-HTL">
+                                <color key="backgroundColor" red="1" green="0.53654399669999997" blue="0.62322676809999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="xji-1D-5Ls"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A16-u5-HTL" firstAttribute="leading" secondItem="sPM-oO-XQm" secondAttribute="leading" constant="20" id="JAl-Pt-3FH"/>
+                            <constraint firstItem="eLQ-yH-wlv" firstAttribute="top" secondItem="A16-u5-HTL" secondAttribute="bottom" constant="20" id="Noo-lm-SWY"/>
+                            <constraint firstAttribute="trailing" secondItem="A16-u5-HTL" secondAttribute="trailing" constant="20" id="Xau-a0-IYf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="A16-u5-HTL" id="8HH-Ul-rP5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXi-0M-m4F" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
