@@ -13,3 +13,12 @@ AutoLayout 场景练习记录
         那么可以修改这种自动添加的NSAutoresizingMaskLayoutConstraint约束吗？实际上无法找到这样的约束的，它被系统隐藏了，你只能在发生冲突时才能在控制台看见它们。
         这个属性与原来的 auto resize mask 结合后能产生很好的效果，如下所示：添加了宽度和高度方向的 mask 后，当 containerView 的尺寸发生变化后，subView 也会随之变化，享受了 Auto Layout 的好处，还不用写约束。
 ![image](https://github.com/Jacob-LJ/AutoLayout-Practice/raw/master/Pics/AutoLayoutTest1.gif)
+
+## case3 (AutoLayout_dynamicCellHeightForDynamicData) : 不同数据展开动态 cell 高度计算
+![image](https://github.com/Jacob-LJ/AutoLayout-Practice/raw/master/Pics/AutoLayout_dynamicCellHeightForDynamicData.gif)
+    1 动态数据的动态 cell 高度 autolayout demo 参考
+    情况1: 模型中所有数据都有值, 参考 tableview row 0
+    情况2: 模型中的描述点个别没有,此时去掉没值的 label 并自定向上排列, 参考 tableview row 1
+    情况3: 模型中的 Desc 没有值 , 描述点则向上顶上, 保持对应的间隙, 参考 tableview row 2
+    总结: descLB 使用了 属性 attributed text 赋值, 然后添加了行间距及 truncate tail (尾部省略号)效果, 细节地方留意cell 的 xib 布局
+
