@@ -22,3 +22,7 @@ AutoLayout 场景练习记录
     情况3: 模型中的 Desc 没有值 , 描述点则向上顶上, 保持对应的间隙, 参考 tableview row 2
     总结: descLB 使用了 属性 attributed text 赋值, 然后添加了行间距及 truncate tail (尾部省略号)效果, 细节地方留意cell 的 xib 布局
 
+## case4 (dynamicCellHeight2_hideExpandBtn) : 不同数据展开动态 cell 高度计算+3行内不展示 展开按钮效果
+![image](https://github.com/Jacob-LJ/AutoLayout-Practice/raw/master/Pics/dynamicCellHeight2_hideExpandBtn.gif)
+    参考 case3 的布局效果, 添加指定行数对 展开按钮的显示与隐藏功能
+

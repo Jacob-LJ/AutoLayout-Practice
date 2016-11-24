@@ -158,4 +158,5 @@
     [self.containerView layoutIfNeeded];
     return [self.containerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height+1;
 }
+
 @end
